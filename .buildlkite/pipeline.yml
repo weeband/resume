@@ -1,0 +1,13 @@
+env:
+  CNX_ENV: test
+  DOCKER_HOST: tcp://dockerdind:2375
+
+steps:
+  - label: ':hammer: Run tests'
+    command: 
+      - echo "test passed"
+  
+  - label: ':rocket: Update'
+    command: 
+      - cd /home/wb/resume && git pull
+    
