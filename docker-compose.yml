@@ -1,8 +1,10 @@
 web:
-  image: nginx
+ #image: nginx
+  image: wibenson/nginx-amplify
   volumes:
    - .:/usr/share/nginx/html
   ports:
    - "80:80"
   environment:
+   - API_KEY=1159ceb11adc7908aa928435624a8308
    - NGINX_PORT=80
